@@ -4,7 +4,7 @@
   "productName": "AscensionZ Launcher",
   "description": "Launcher Minecraft moddé indépendant, inspiré de HunterZ",
   "author": "RIBOTE--MORAL Noa",
-  "license": "UNLICENSED",
+  "license": "LICENSE.txt",
   "homepage": "https://github.com/noaribote/AscensionZ-Launcher",
   "bugs": { "url": "https://github.com/noaribote/AscensionZ-Launcher/issues" },
   "private": true,
