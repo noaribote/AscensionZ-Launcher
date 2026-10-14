@@ -1,0 +1,48 @@
+{
+  "name": "ascensionz",
+  "version": "1.0.0",
+  "productName": "AscensionZ Launcher",
+  "description": "Launcher Minecraft moddé indépendant, inspiré de HunterZ",
+  "author": "RIBOTE--MORAL Noa",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/noaribote/AscensionZ-Launcher",
+  "bugs": { "url": "https://github.com/noaribote/AscensionZ-Launcher/issues" },
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder build",
+    "dist:win": "npm run dist -- -w",
+    "dist:mac": "npm run dist -- -m",
+    "dist:linux": "npm run dist -- -l",
+    "lint": "eslint ."
+  },
+  "engines": { "node": "22.x.x" },
+  "dependencies": {
+    "@electron/remote": "^2.1.3",
+    "adm-zip": "^0.5.16",
+    "discord-rpc-patch": "^4.0.1",
+    "ejs": "^3.1.10",
+    "ejs-electron": "^3.0.0",
+    "electron-updater": "^6.7.3",
+    "fs-extra": "^11.3.3",
+    "github-syntax-dark": "^0.5.0",
+    "got": "^11.8.5",
+    "helios-core": "~2.3.0",
+    "helios-distribution-types": "^1.3.0",
+    "jquery": "^3.7.1",
+    "lodash.merge": "^4.6.2",
+    "semver": "^7.7.3",
+    "toml": "^3.0.0"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.6.1",
+    "electron": "^39.8.10",
+    "electron-builder": "^26.4.0",
+    "eslint": "^9.39.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noaribote/AscensionZ-Launcher.git"
+  }
+}
