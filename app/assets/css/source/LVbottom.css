@@ -1,0 +1,310 @@
+/* Style for a general label on the bottom of the landing view. */
+.bot_label {
+    font-size: 9px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px #bebcbb;
+}
+
+/* Divider used on the bottom of the landing view. */
+.bot_divider {
+    height: 25px;
+    width: 2px;
+    background: rgba(107, 105, 105, 0.7);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* * *
+* Landing View (Bottom Styles) | Left Content
+* * */
+
+/* Maintains maximum width on the status bar. */
+#server_status_wrapper {
+    display: inline-flex;
+    width: 75px;
+}
+
+/* Span which displays the player count of the selected server. */
+#player_count {
+    color: #949494;
+    font-size: 8px;
+    font-weight: 900;
+    text-shadow: 0px 0px 20px #949494;
+    margin-left: 10px;
+}
+
+/* Wrapper container for the mojang status bar. */
+#mojangStatusWrapper {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+/* Icon which displays the status of the mojang services. */
+#mojang_status_icon {
+    font-size: 30px;
+    color: #848484;
+    margin-left: 15px;
+    font-family: 'sans-serif';
+}
+
+/* Tooltip which displays more details about the mojang statuses. */
+#mojangStatusTooltip {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    width: 145px;
+    min-height: 150px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    z-index: 1;
+    font-family: 'Avenir Medium';
+    font-size: 12px;
+    transition: visibility 0s linear 0.25s, opacity 0.25s ease;
+    bottom: calc(100% + 15px);
+    transform: translateX(-50%);
+    margin-left: 50%;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    cursor: default;
+}
+#mojangStatusTooltip:after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
+}
+#mojangStatusWrapper:hover #mojangStatusTooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+/* Tooltip title for the mojang statuses. */
+#mojangStatusTooltipTitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+/* Wrapper container for the non essential services title. */
+#mojangStatusNEContainer {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+/* White bar which surrounds the non essential service title. */
+.mojangStatusNEBar {
+    height: 1px;
+    width: 100%;
+    background: white;
+}
+
+/* Non essential service title text. */
+#mojangStatusNETitle {
+    font-size: 10px;
+    padding: 0px 3px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Wrapper container for mojang service information. */
+.mojangStatusContainer {
+    display: flex;
+}
+
+/* Displays the name of the mojang service. */
+.mojangStatusName {
+    width: 100%;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 12px;
+    padding: 6px 0px;
+}
+
+/* Displays the status of the mojang service. */
+.mojangStatusIcon {
+    margin-right: 10px;
+    font-size: 18.5px;
+    color: #848484;
+}
+
+/* * *
+* Landing View (Bottom Styles) | Center Content
+* * */
+
+/* Button which opens the news view. */
+#newsButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+#newsButton:hover #newsButtonText,
+#newsButton:focus #newsButtonText {
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
+}
+#newsButton:active {
+    color: #c7c7c7;
+    text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
+}
+
+#newsButton:hover #newsButtonSVG,
+#newsButton:focus #newsButtonSVG {
+    -webkit-filter: drop-shadow(0px 0px 2px #fff);
+}
+#newsButton:active #newsButtonSVG .arrowLine {
+    stroke: #c7c7c7;
+}
+#newsButton:active #newsButtonSVG {
+    -webkit-filter: drop-shadow(0px 0px 2px #c7c7c7);
+}
+#newsButton:disabled #newsButtonSVG .arrowLine {
+    stroke: rgba(255, 255, 255, 0.75);
+}
+
+/* Icon which indicates there is new news. */
+#newsButtonAlert {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 50%;
+    background: red;
+    right: -1px;
+    top: 50%;
+}
+
+/* Arrow image which floats above the news button. */
+#newsButtonSVG {
+    height: 11px;
+    margin-left: -2px;
+    transition: 0.25s ease;
+}
+
+/* Span which contains the news button text. */
+#newsButtonText {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 0px #bebcbb;
+    font-size: 11px;
+    line-height: 30px;
+    display: flex;
+    transition: 0.25s ease;
+}
+
+/* * *
+* Landing View (Bottom Styles) | Right Content
+* * */
+
+/* Main launch content container. */
+#landingContainer > #lower > #right #launch_content {
+    position: relative;
+    top: 25px;
+    display: inline-flex;
+}
+
+/* The launch button. */
+#launch_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 0px #bebcbb;
+    font-size: 20px;
+    padding: 0px;
+    transition: 0.25s ease;
+    outline: none;
+}
+#launch_button:hover,
+#launch_button:focus {
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
+}
+#launch_button:active {
+    color: #c7c7c7;
+    text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
+}
+#launch_button:disabled {
+    color: #c7c7c7;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* Launch details main container, hidden until launch processing begins. */
+#launch_details {
+    position: relative;
+    top: 25px;
+    display: none;
+}
+ 
+/* Left side of launch details container, displays percentage and a divider. */
+#launch_details_left {
+    display: flex;
+}
+
+/* Span which displays percentage complete. */
+#launch_progress_label {
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 0px #bebcbb;
+    font-size: 20px;
+    min-width: 53.21px;
+    max-width: 53.21px;
+    text-align: right;
+}
+
+/* Right side of launch details container, displays progress bar and details. */
+#launch_details_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Button which opens the server selection view. */
+#server_selection_button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    line-height: 24px;
+    padding: 0px;
+    transition: 0.25s ease;
+}
+#server_selection_button:hover,
+#server_selection_button:focus {
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff, 0px 0px 20px #fff;
+}
+#server_selection_button:active {
+    color: #c7c7c7;
+    text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
+}
+
+/* Progress bar styles. */
+#launch_progress[value] {
+    height: 3px;
+    width: 265px;
+    -webkit-appearance: none;
+}
+#launch_progress[value]::-webkit-progress-bar {
+    background-color: transparent;
+}
+#launch_progress[value]::-webkit-progress-value {
+    background-color: #fff;
+}
+
+/* Span which displays information about the status of the launch process. */
+#launch_details_text {
+    font-size: 11px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

@@ -1,0 +1,177 @@
+@import "../../../node_modules/github-syntax-dark/lib/github-dark.css";
+@import url('source/keyframes.css');
+@import url('welcome.css');
+@import url('login.css');
+@import url('loginOptions.css');
+@import url('waiting.css');
+@import url('settings.css');
+@import url('app.css');
+@import url('overlay.css');
+@import url('LandingView.css');
+
+@font-face {
+    font-family: 'Avenir Book';
+    src: url('../fonts/Avenir-Book.ttf');
+}
+
+@font-face {
+    font-family: 'Avenir Medium';
+    src: url('../fonts/Avenir-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Ringbearer';
+    src: url('../fonts/Ringbearer.ttf');
+}
+
+body, html, div {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+body, button {
+    font-family: 'Avenir Book';
+    color: white;
+}
+
+#frameBar {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 1s ease;
+    -webkit-user-select: none;
+}
+
+#frameResizableTop {
+    height: 2px;
+    width: 100%;
+    -webkit-app-region: no-drag;
+}
+
+#frameMain {
+    display: flex;
+    height: 20px
+}
+
+.frameResizableVert {
+    width: 2px;
+    -webkit-app-region: no-drag;
+}
+
+#frameContentWin {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    -webkit-app-region: drag;
+}
+
+#frameContentDarwin {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    -webkit-app-region: drag;
+}
+
+#frameTitleDock { padding: 0px 10px; }
+#frameTitleText {
+    font-size: 14px;
+    font-family: 'Avenir Medium';
+    letter-spacing: 0.5px;
+}
+
+#frameButtonDockWin {
+    -webkit-app-region: no-drag !important;
+    position: relative;
+    top: -2px;
+    right: -2px;
+    height: 22px;
+}
+#frameButtonDockWin > .frameButton:not(:first-child) {
+    margin-left: -4px;
+}
+
+#frameButtonDockDarwin {
+    -webkit-app-region: no-drag !important;
+    position: relative;
+    top: -1px;
+    right: -1px;
+}
+
+.frameButton {
+    background: none;
+    border: none;
+    height: 22px;
+    width: 39px;
+    cursor: pointer;
+}
+.frameButton:hover,
+.frameButton:focus {
+    background: rgba(189, 189, 189, 0.43);
+}
+.frameButton:active {
+    background: rgba(156, 156, 156, 0.43);
+}
+.frameButton:focus {
+    outline: 0px;
+}
+
+#frameButton_close:hover,
+#frameButton_close:focus {
+    background: rgba(255, 53, 53, 0.61) !important;
+}
+#frameButton_close:active {
+    background: rgba(235, 0, 0, 0.61) !important;
+}
+
+.frameButtonDarwin {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 0px;
+    margin-left: 5px;
+    -webkit-app-region: no-drag !important;
+    cursor: pointer;
+}
+.frameButtonDarwin:focus {
+    outline: 0px;
+}
+
+#frameButtonDarwin_close {
+    background-color: #e74c32;
+}
+#frameButtonDarwin_close:hover,
+#frameButtonDarwin_close:focus {
+    background-color: #FF9A8A;
+}
+#frameButtonDarwin_close:active {
+    background-color: #ff8d7b;
+}
+
+#frameButtonDarwin_minimize {
+    background-color: #fed045;
+}
+#frameButtonDarwin_minimize:hover,
+#frameButtonDarwin_minimize:focus {
+    background-color: #FFE9A9;
+}
+#frameButtonDarwin_minimize:active {
+    background-color: #ffde7b;
+}
+
+#frameButtonDarwin_restoredown {
+    background-color: #96e734;
+}
+#frameButtonDarwin_restoredown:hover,
+#frameButtonDarwin_restoredown:focus {
+    background-color: #D6FFA6;
+}
+#frameButtonDarwin_restoredown:active {
+    background-color: #bfff76;
+}
