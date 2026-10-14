@@ -20,4 +20,5 @@
 1) 
 
 [Plus d'informations concernant la compilation](https://www.electron.build/)
-[Nebula]: https://github.com/dscalzi/Nebula 'dscalzi/Nebula'
+
+[Nebula](https://github.com/dscalzi/Nebula)
