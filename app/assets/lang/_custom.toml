@@ -1,0 +1,18 @@
+[ejs.app]
+title = "AscensionZ Launcher"
+
+[ejs.landing]
+mediaGitHubURL = "https://github.com/noaribote/AscensionZ-Launcher"
+mediaXURL = "#"
+mediaInstagramURL = "#"
+mediaYouTubeURL = "#"
+mediaDiscordURL = "#"
+
+[ejs.settings]
+sourceGithubLink = "https://github.com/noaribote/AscensionZ-Launcher"
+supportLink = "https://github.com/noaribote/AscensionZ-Launcher/issues"
+
+[ejs.welcome]
+welcomeHeader = "Bienvenue dans AscensionZ"
+welcomeDescription = "Tentez de survivre dans ce monde post-apocalyptique où une pandémie à dévaster l'intégralité de l'humanité (ou presque). Tout comme les vivres, les survivants se font rares donc n'oubliez pas que vous êtes de ceux qui survivent."
+welcomeDescCTA = "- [NICA] Nouvelle Indépendance des Coalitions Armées"
