@@ -286,6 +286,8 @@
     background: rgba(255, 255, 255, 0.25);
 }
 
+.BonusWidthCls { width: 75%; }
+
 /* Toggle Switch */
 .toggleSwitch {
     position: relative;
