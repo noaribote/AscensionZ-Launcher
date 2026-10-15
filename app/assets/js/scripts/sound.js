@@ -1,14 +1,31 @@
 (() => {
     const audio = document.getElementById('backgroundMusic');
     const muteCheckbox = document.getElementById('checkbox1IDENTIFY');
+    const volumeSlider = document.getElementById('backgroundMusicVolume');
+    const volumeLabel = document.getElementById('backgroundMusicVolumeValue');
 
-    if (!audio || !muteCheckbox) {
-        console.error('Audio de fond ou checkbox introuvable', { audio, muteCheckbox });
+    if (!audio || !muteCheckbox || !volumeSlider || !volumeLabel) {
+        console.error('Audio ou contrôles audio introuvables', { audio, muteCheckbox, volumeSlider, volumeLabel });
         return;
     }
 
     // The settings switch means "music enabled": checked = play, unchecked = mute.
     muteCheckbox.checked = localStorage.getItem('musicEnabled') !== 'false';
+    const storedVolume = localStorage.getItem('musicVolume');
+    const initialVolume = storedVolume === null ? 50 : Math.min(100, Math.max(0, Number(storedVolume) || 0));
+    volumeSlider.setAttribute('value', initialVolume);
+
+    function updateVolume() {
+        const volume = Number(volumeSlider.getAttribute('value'));
+        audio.volume = volume / 100;
+        volumeLabel.textContent = `${volume} %`;
+    }
+
+    updateVolume();
+    volumeSlider.addEventListener('change', () => {
+        updateVolume();
+        localStorage.setItem('musicVolume', volumeSlider.getAttribute('value'));
+    });
 
     async function syncPlayback() {
         if (!muteCheckbox.checked) {
