@@ -27,9 +27,9 @@
 }
 
 /* Stationary image for the spinner. */
-#loadCenterImage {
-    position: absolute;
-    width: 400px;
+.HZ_logo_contain {
+    width: 100%;
     height: auto;
-    animation: disappair 2s forwards;
+    opacity: 0;
+    animation: HZ_logo_animation 2.5s forwards;
 }
