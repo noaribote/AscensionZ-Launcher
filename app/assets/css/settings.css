@@ -333,6 +333,22 @@ input:checked + .toggleSwitchSlider:before {
     transform: translateX(15px);
 }
 
+.settingsMusicVolumeAction {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    gap: 12px;
+}
+#backgroundMusicVolume {
+    width: 85%;
+    margin: 15px 0;
+}
+#backgroundMusicVolumeValue {
+    min-width: 42px;
+    text-align: right;
+    font-size: 12px;
+}
+
 /* Range Slider styles. */
 .rangeSlider {
     width: 35%;
