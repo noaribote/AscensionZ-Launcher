@@ -95,12 +95,6 @@ async function showMainUI(data){
                 $(VIEWS.loginOptions).fadeIn(1000)
             }
         }
-
-        setTimeout(() => {
-            $('#loadingContainer').fadeOut(500, () => {
-                $('#loadSpinnerImage').removeClass('rotating')
-            })
-        }, 250)
         
     }, 750)
     // Disable tabbing to the news container.

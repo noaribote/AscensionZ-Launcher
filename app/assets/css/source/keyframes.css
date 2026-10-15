@@ -65,12 +65,17 @@
     }
 }
 
-@keyframes rotating {
-    from {
-        transform: rotate(0deg);
+@keyframes disappair {
+    0% {
+        transform: scale(1);
+        opacity: 1;
     }
-    to {
-        transform: rotate(360deg);
+    70% {
+        opacity: 0;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
     }
 }
 
