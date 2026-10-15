@@ -15,13 +15,13 @@
 2) Exécutez la commande ``npm i --save-dev electron-builder`` dans ce dernier
 3) Exécutez la commande ``npm run build``
 
-# Créer le fichier de distribution (optionnel) :
-
-1) 
-
 # Point important :
 Le dossier **.online/** contient le contenu qui se doit d'être hébergé par un tiers. Dans le code actuel, le contenu de **.online/** est déjà hébergé au domaine du développeur [noaribote.fr](https://noaribote.fr/) sous cette URL :
 https://noaribote.fr/public/AscensionZ/.online/
+
+# Créer le fichier de distribution (optionnel) :
+
+1) 
 
 [Plus d'informations concernant la compilation](https://www.electron.build/)
 
