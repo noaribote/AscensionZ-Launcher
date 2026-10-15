@@ -114,7 +114,7 @@ ipcMain.on(MSFT_OPCODE.OPEN_LOGIN, (ipcEvent, ...arguments_) => {
         width: 520,
         height: 600,
         frame: true,
-        icon: getPlatformIcon('SealCircle')
+        icon: path.join(__dirname, 'app', 'assets', 'images', `AscensionZ.png`)
     })
 
     msftAuthWindow.on('closed', () => {
@@ -164,7 +164,7 @@ ipcMain.on(MSFT_OPCODE.OPEN_LOGOUT, (ipcEvent, uuid, isLastAccount) => {
         width: 520,
         height: 600,
         frame: true,
-        icon: getPlatformIcon('SealCircle')
+        icon: path.join(__dirname, 'app', 'assets', 'images', `AscensionZ.png`)
     })
 
     msftLogoutWindow.on('closed', () => {
@@ -285,21 +285,6 @@ function createMenu() {
         let menuObject = Menu.buildFromTemplate(menuTemplate)
         Menu.setApplicationMenu(menuObject)
     }
-}
-
-function getPlatformIcon(filename){
-    let ext
-    switch(process.platform) {
-        case 'win32':
-            ext = 'ico'
-            break
-        case 'darwin':
-        case 'linux':
-        default:
-            ext = 'png'
-            break
-    }
-    return path.join(__dirname, 'app', 'assets', 'images', `${filename}.${ext}`)
 }
 
 app.on('ready', createWindow)
