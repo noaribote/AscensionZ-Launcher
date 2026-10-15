@@ -19,6 +19,10 @@
 
 1) 
 
+# Point important :
+Le dossier **.online/** contient le contenu qui se doit d'être hébergé par un tiers. Dans le code actuel, le contenu de **.online/** est déjà hébergé au domaine du développeur [noaribote.fr](https://noaribote.fr/) sous cette URL :
+https://noaribote.fr/public/AscensionZ/.online/
+
 [Plus d'informations concernant la compilation](https://www.electron.build/)
 
 [Nebula](https://github.com/dscalzi/Nebula)
