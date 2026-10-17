@@ -29,11 +29,11 @@
     width: 70%;
     height: 100%;
 }
-#landingContainer > #upper > #right {
+/* #landingContainer > #upper > #right {
     display: inline-flex;
     width: 15%;
     height: 100%;
-}
+} */
 
 /* Lower content container. */
 #landingContainer > #lower {
@@ -41,7 +41,7 @@
     display: flex;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-#landingContainer > #lower > #left {
+/* #landingContainer > #lower > #left {
     position: relative;
     transition: top 2s ease;
     top: 0px;
@@ -57,26 +57,27 @@
     line-height: 24px;
     left: 50px;
 }
-#landingContainer > #lower > #center {
-    position: relative;
-    transition: top 2s ease;
-    top: 0px;
-    height: 100%;
-    width: 34%;
-    display: inline-flex;
-    justify-content: center;
-}
 #landingContainer > #lower > #center #content {
     position: relative;
     z-index: 500;
     transition: top 2s ease;
     top: 10px;
+} */
+#landingContainer > #lower > #center video {
+    position: absolute;
+    bottom: 80px; left: 60px;
+    width: 460px; height: auto;
+    border-radius: 27px;
+    box-shadow: 0 0 20px rgba(14, 14, 14, 0.808);
+    transform: perspective(800px) rotate(-5deg) rotateX(10deg) rotateY(15deg) scale(0.9);
+    transition: 0.3s ease-in-out;
 }
-#landingContainer > #lower > #right {
-    position: relative;
-    transition: top 2s ease;
-    top: 0px;
-    height: 100%;
+#landingContainer > #lower > #center video:hover,
+#landingContainer > #lower > #center video:focus { transform: perspective(800px) rotate(0deg) rotateX(0deg) rotateY(0deg) scale(1) }
+/* #landingContainer > #lower > #right {
+    position: absolute;
+    bottom: 180px; left: 220px;
+    height: auto;
     width: 33%;
     display: inline-flex;
-}
+} */

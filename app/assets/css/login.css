@@ -329,30 +329,6 @@
     position: absolute;
 }
 
-
-
-/*.spinningCircle {
-    margin-left: 20px;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0);
-    border-top-color: #ffffff;
-    border-right-color: #ffffff;
-    border-left-color: rgba(255, 255, 255, 0.50);
-    border-bottom-color: rgba(255, 255, 255, 0.50);
-    animation: single2 4s infinite linear;
-}
-
-@keyframes single2 {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(720deg);
-    }
-}*/
-
 /* Disclaimer container. */
 #loginDisclaimer {
     display: flex;

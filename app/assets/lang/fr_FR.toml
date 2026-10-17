@@ -35,8 +35,8 @@ loginPasswordDisclaimer1 = "Votre mot de passe est envoyé directement à Mojang
 loginPasswordDisclaimer2 = "{appName} n'est pas affilié à Mojang AB."
 
 [ejs.loginOptions]
-loginOptionsTitle = "Connectez-vous"
-loginWithMicrosoft = "Connexion avec Microsoft"
+loginOptionsTitle = "Connexion à Minecraft"
+loginWithMicrosoft = "Ajouter un compte Microsoft"
 loginWithMojang = "Connexion avec Mojang"
 cancelButton = "Fermer"
 
@@ -253,8 +253,8 @@ confirmButton = "Je suis sûr"
 cancelButton = "Fermer"
 
 [js.settings.authAccountPopulate]
-username = "Pseudonyme"
-uuid = "UUID"
+username = "Nom d'utilisateur"
+uuid = "Identifiant UUID"
 selectAccount = "Sélectionner un Compte"
 selectedAccount = "Compte Sélectionné ✓"
 logout = "Déconnexion"

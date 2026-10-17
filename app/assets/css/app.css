@@ -18,7 +18,6 @@
     justify-content: center;
 }
 
-/* Spinner container. */
 #loadSpinnerContainer {
     position: relative;
     display: flex;
@@ -26,7 +25,6 @@
     justify-content: center;
 }
 
-/* Stationary image for the spinner. */
 .HZ_logo_contain {
     width: 100%;
     height: auto;

@@ -2,11 +2,10 @@
 title = "AscensionZ Launcher"
 
 [ejs.landing]
+mediaXURL = "https://github.com/noaribote/"
 mediaGitHubURL = "https://github.com/noaribote/AscensionZ-Launcher"
-mediaXURL = "#"
-mediaInstagramURL = "#"
-mediaYouTubeURL = "#"
-mediaDiscordURL = "#"
+mediaPortfolioURL = "https://www.noaribote.fr/"
+mediaAlousFranceURL = "https://www.alous.fr/"
 
 [ejs.settings]
 sourceGithubLink = "https://github.com/noaribote/AscensionZ-Launcher"

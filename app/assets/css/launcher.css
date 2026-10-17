@@ -1,5 +1,6 @@
 @import "../../../node_modules/github-syntax-dark/lib/github-dark.css";
 @import url('source/keyframes.css');
+@import url('source/media.css');
 @import url('welcome.css');
 @import url('login.css');
 @import url('loginOptions.css');
@@ -8,6 +9,8 @@
 @import url('app.css');
 @import url('overlay.css');
 @import url('LandingView.css');
+
+:root { --red: #8A0010; }
 
 @font-face {
     font-family: 'Avenir Book';
@@ -37,6 +40,14 @@ p {
 body, button {
     font-family: 'Avenir Book';
     color: white;
+}
+
+.buttons_shows_design {
+    background: #241414;
+    background: linear-gradient(90deg,rgb(32, 27, 27) 0%, #1f1618 35%, rgb(32, 27, 27) 100%);
+    border-radius: 27px;
+    box-shadow: 0 0 10px black;
+    border: 1px solid rgba(243, 243, 243, 0.199);
 }
 
 #frameBar {
