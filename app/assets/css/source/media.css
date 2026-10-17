@@ -1,0 +1,8 @@
+@media (prefers-reduced-motion: reduce) {
+    .cloudPNG {
+        animation: none;
+    }
+    .cloudPNG:last-child {
+        display: none;
+    }
+}
