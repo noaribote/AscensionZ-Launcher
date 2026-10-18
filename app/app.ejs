@@ -25,6 +25,10 @@
     </style>
 </head>
 <body bkid="<%=bkid%>">
+    <div class="cloudDrift" aria-hidden="true">
+        <img class="cloudPNG" src="assets/images/cloud.png">
+        <img class="cloudPNG" src="assets/images/cloud.png">
+    </div>
     <%- include('frame') %>
     <div id="main">
         <%- include('welcome') %>
@@ -35,7 +39,7 @@
         <%- include('landing') %>
     </div>
     <%- include('overlay') %>
-    <audio id="backgroundMusic" src="https://noaribote.fr/public/AscensionZ/.online/playback.ogg" preload="auto" loop></audio>
+    <audio id="backgroundMusic" src="https://ascensionz-online.netlify.app/playback.ogg" preload="auto" loop></audio>
     <script src="assets/js/scripts/sound.js"></script>
     <div id="loadingContainer">
         <div id="loadingContent">

@@ -18,36 +18,6 @@
     position: relative;
 }
 
-.cloudDrift {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-    pointer-events: none;
-    user-select: none;
-}
-
-.cloudPNG {
-    opacity: 0.1;
-    background: none;
-    border: none;
-    width: max(100%, 1200px);
-    height: auto;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate3d(0, -50%, 0);
-    will-change: transform;
-}
-
-.cloudPNG:first-child {
-    animation: cloud-drift 90s linear infinite;
-}
-
-.cloudPNG:last-child {
-    animation: cloud-drift 90s linear infinite;
-    animation-delay: -45s;
-}
-
 #welcomeImageSeal {
     height: 170px;
     width: auto;
