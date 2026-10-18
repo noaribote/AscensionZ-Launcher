@@ -5,6 +5,13 @@
 /logs/
 /dist/
 
+# Serveurs
+.online/cache
+.online/meta
+.online/repo
+.online/schemas
+.online/servers
+
 # Nebula
 Nebula/commands.txt
 Nebula/tuto.mp4
