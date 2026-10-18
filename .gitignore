@@ -4,3 +4,15 @@
 /target/
 /logs/
 /dist/
+README.md
+package.json
+package-lock.json
+LICENSE.txt
+index.js
+app/
+build/
+libraries/
+.nvmrc
+eslint.config.mjs
+electron-builder.yml
+dev-app-update.yml
