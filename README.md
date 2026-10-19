@@ -33,7 +33,7 @@ BASE_URL=https://ascensionz-online.netlify.app/
 HELIOS_DATA_FOLDER=C:\Users\user\AppData\Roaming\AscensionZ Launcher
 ```
 4) Modifiez si nécessaire ``JAVA_EXECUTABLE`` afin d'y mettre le chemin absolu de votre exécutable java.
-5) De même pour ``HELIOS_DATA_FOLDER`` où il faudra saisir le chemin absolu du dossier **AscensionZ Launcher** dans votre **AppData** (``Win + R`` puis ``%appdata%`` pour y accéder)
+5) De même pour ``HELIOS_DATA_FOLDER`` où il faudra saisir le chemin absolu du dossier **AscensionZ Launcher/** dans votre **AppData/** (``Win + R`` puis ``%appdata%`` pour y accéder)
 6) Copiez le chemin absolu de **Nebula/workspace/** et collez-le dans ``ROOT``
 7) Entrez l'URL de votre espace en ligne pour y héberger les ressources du launcher dans ``BASE_URL``
 8) Exécutez la commande ``npm start -- init root`` dans le terminal de **Nebula/**
