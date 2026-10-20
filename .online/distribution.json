@@ -9,16 +9,16 @@
   "servers": [
     {
       "id": "AscensionZ-1.12.2",
-      "name": "AscensionZ - Primitif",
+      "name": "AscensionZ - Primal",
       "description": "AscensionZ | Minecraft 1.12.2 | Forge v14.23.5.2859",
-      "icon": "https://ascensionz-online.netlify.app/iconprimitif.png",
+      "icon": "https://ascensionz-online.netlify.app/iconprimal.png",
       "version": "1.0.0",
       "address": "localhost:25565",
       "minecraftVersion": "1.12.2",
       "discord": {
         "shortId": "1322576039402016768",
-        "largeImageText": "AscensionZ - Primitif",
-        "largeImageKey": "iconprimitif"
+        "largeImageText": "AscensionZ - Primal",
+        "largeImageKey": "iconprimal"
       },
       "mainServer": true,
       "autoconnect": false,
