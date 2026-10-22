@@ -1,3 +1,7 @@
+# Multijoueur
+
+Le multijoueur est intégré dans tous vos mondes Minecraft grâce au **Essential Mod**. Invitez vos amis et échangez des messages via un menu optimisé.
+
 # Lancer le projet (~10 minutes) :
 
 1) Installez Visual Studio Code
