@@ -273,15 +273,20 @@
 .settingsFieldLeftAbout {
     display: flex;
     flex-direction: column;
-    margin: 25px 0 25px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
-    padding-bottom: 25px;
     max-width: 75%;
+    margin-bottom: 30px;
 }
 .settingsFieldTitle {
     font-size: 14px;
     font-family: 'Avenir Medium';
     color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+    margin: 10px 0;
+    width: 70%;
+    display: block;
+    position: relative;
+    font-size: medium;
 }
 .settingsFieldDesc {
     font-size: 12px;

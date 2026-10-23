@@ -1,6 +1,6 @@
 #setupIcons {
     position: absolute;
-    top: 20px; left: 20px;
+    bottom: 60px; right: 100px;
     padding: 10px 25px;
     max-width: 220px;
     display: flex;
@@ -100,28 +100,6 @@
     filter: blur(28px);
 }
 
-/* Logo container styles w/ update. */
-/* #image_seal_container[update]{
-    cursor: pointer
-}
-#image_seal_container[update]:before,
-#image_seal_container[update]:after {
-    cursor: pointer;
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    top: 0%;
-    left: 0%;
-    border-radius: 50%;
-    box-shadow: 0 0 15px #43c628;
-    animation: glow-grow 4s ease-out infinite;
-    background: rgba(0, 0, 0, 0.15);
-}
-#image_seal_container[update]:before {
-    animation-delay: 2s;
-} */
-
 /* Update available tooltip styles. */
 #updateAvailableTooltip {
     cursor: pointer;
@@ -174,10 +152,10 @@
     align-items: end;
     justify-content: end;
     box-sizing: border-box;
-    position: relative;
+    position: absolute;
     width: auto;
-    padding: 15px 25px;
-    top: 20px; right: 20px;
+    padding: 5px;
+    top: 0; right: 100px;
 }
 
 /* User profile avatar container. */
@@ -226,28 +204,31 @@
 
 /* User profile name text. */
 #user_text {
+    --prop-user-text: 5px;
     font-size: 16px;
     min-width: 135px;
-    background: red;
     font-weight: 900;
     letter-spacing: 1px;
     text-shadow: 0px 0px 20px black;
-    position: relative;
-    right: 15px;
-    text-align: right;
+    position: absolute;
+    right: 90px;
+    top: calc(50% - (16px/2) - var(--prop-user-text) - 2px);
+    text-align: center;
     -webkit-user-select: initial;
+    border-radius: 27px 7px 7px 27px !important;
+    padding: var(--prop-user-text) 25px;
 }
 
 /* Social media icon content container. */
 #mediaContent {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
     height: auto;
-    width: 70px;
     align-items: center;
-    padding: 25px 0;
+    padding: 25px 10px;
+    top: 90px; right: 119px;
+    border-radius: 7px 7px 27px 27px !important;
 }
 
 #mediaContent i {
@@ -297,7 +278,15 @@
     display: flex;
     align-items: center;
     outline: none;
+    transition: 0.1s ease-in-out;
 }
+
+.mediaButton i { transform: scale(0.9); transition: 0.1s ease-in-out; }
+
+.mediaButton:hover,
+.mediaButton:focus { cursor: pointer; }
+.mediaButton:hover i,
+.mediaButton:focus i { transform: scale(1.1) !important; }
 
 #settingsMediaContainer {
     position: relative;
