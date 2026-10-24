@@ -1264,6 +1264,17 @@
           }
         },
         {
+          "id": "badmobs-common.toml",
+          "name": "badmobs-common.toml",
+          "type": "File",
+          "artifact": {
+            "size": 108820,
+            "url": "http://noaribote.fr/public/ascensionz/.online/servers/AscensionZ-1.16.5/files/config/badmobs-common.toml",
+            "MD5": "ed710debdf7fe067ac0dcd013efca7e7",
+            "path": "config/badmobs-common.toml"
+          }
+        },
+        {
           "id": "C.M.A_Transport_Pack _v.2.5-1.16.5.jar",
           "name": "C.M.A_Transport_Pack _v.2.5-1.16.5.jar",
           "type": "File",
