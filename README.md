@@ -20,8 +20,8 @@ Le multijoueur est intégré dans tous vos mondes Minecraft grâce au **Essentia
 3) Exécutez la commande ``npm run build``
 
 # Point important :
-Le dossier **.online/** contient le contenu qui se doit d'être hébergé par un tiers. Dans le code actuel, le contenu de **.online/** est déjà hébergé dans un domaine [Netlify](https://netlify.com/) sous cette URL :
-https://ascensionz-online.netlify.app/
+Le dossier **.online/** contient le contenu qui se doit d'être hébergé par un tiers. Dans le code actuel, le contenu de **.online/** est déjà hébergé dans le domaine personnel du développeur [RIBOTE--MORAL Noa](https://www.noaribote.fr/) sous cette URL :
+https://noaribote.fr/public/ascensionz/.online/
 
 # Créer le fichier de distribution (optionnel) :
 
@@ -33,7 +33,7 @@ https://ascensionz-online.netlify.app/
 ```ini
 JAVA_EXECUTABLE=C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe
 ROOT=F:\Nebula\workspace
-BASE_URL=https://ascensionz-online.netlify.app/
+BASE_URL=https://noaribote.fr/public/ascensionz/.online/
 HELIOS_DATA_FOLDER=C:\Users\user\AppData\Roaming\AscensionZ Launcher
 ```
 4) Modifiez si nécessaire ``JAVA_EXECUTABLE`` afin d'y mettre le chemin absolu de votre exécutable java.
@@ -45,7 +45,7 @@ HELIOS_DATA_FOLDER=C:\Users\user\AppData\Roaming\AscensionZ Launcher
 10) Placez dans le nouveau répertoire tous vos mods, maps, textures...
 11) Générez votre fichier distribution avec ``npm start -- generate distro``
 12) Vous pourrez éditer ``distribution.json`` notamment afin d'y ajouter un logo.
-13) Vous n'avez plus qu'à publier les fichiers sur votre espace en ligne et changer les URLs de ``ascensionz-online.netlify.app`` par les vôtres
+13) Vous n'avez plus qu'à publier les fichiers sur votre espace en ligne et changer les URLs de ``noaribote.fr/public/ascensionz/`` par les vôtres
 
 # Ressources :
 
@@ -54,5 +54,3 @@ HELIOS_DATA_FOLDER=C:\Users\user\AppData\Roaming\AscensionZ Launcher
 [Plus d'informations concernant la compilation electron](https://www.electron.build/)
 
 [Plus d'informations concernant Nebula](https://github.com/dscalzi/Nebula)
-
-[Plus d'informations concernant Netlify](https://netlify.com/)

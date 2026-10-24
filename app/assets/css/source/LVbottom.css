@@ -106,7 +106,7 @@
 #launch_content {
     position: relative;
     top: 25px;
-    display: inline-flex !important;
+    display: inline-flex;
     padding: 5px 25px 5px 5px;
     width: calc(100% - 30px);
 }
@@ -147,8 +147,9 @@
 /* Launch details main container, hidden until launch processing begins. */
 #launch_details {
     position: relative;
-    top: 25px;
+    top: 25px; left: 65px;
     display: none;
+    padding: 15px 27px;
 }
  
 /* Left side of launch details container, displays percentage and a divider. */
