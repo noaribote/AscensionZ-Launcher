@@ -49,6 +49,8 @@ HELIOS_DATA_FOLDER=C:\Users\user\AppData\Roaming\AscensionZ Launcher
 
 # Ressources :
 
+[Plus d'informations concernant le source code d'Helios Launcher](https://github.com/dscalzi/HeliosLauncher)
+
 [Plus d'informations concernant Electron.js](https://www.electronjs.org/)
 
 [Plus d'informations concernant la compilation electron](https://www.electron.build/)
