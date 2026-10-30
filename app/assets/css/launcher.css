@@ -37,9 +37,12 @@ p {
     -webkit-margin-after: 0em;
 }
 
+img { pointer-events: none; }
+
 body, button {
     font-family: 'Avenir Book';
     color: white;
+    user-select: none;
 }
 
 .buttons_shows_design {
